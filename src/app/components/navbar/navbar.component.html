@@ -32,7 +32,16 @@
         <a class="nav-link pr-0" role="button" ngbDropdownToggle>
           <div class="media align-items-center">
             <span class="avatar avatar-sm rounded-circle">
-              <img alt="Image placeholder" src="assets/img/theme/admin.png" />
+              <img
+                *ngIf="isAdmin"
+                alt="Image placeholder"
+                src="assets/img/theme/admin.png"
+              />
+              <img
+                *ngIf="!isAdmin"
+                alt="Image placeholder"
+                src="assets/img/theme/personal.png"
+              />
             </span>
             <div
               *ngIf="isAuthenticated"

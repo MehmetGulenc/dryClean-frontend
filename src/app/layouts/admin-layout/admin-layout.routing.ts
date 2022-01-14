@@ -17,7 +17,6 @@ export const AdminLayoutRoutes: Routes = [
     component: AuthSettingsComponent,
     canActivate: [AdminGuard],
   },
-  //{ path: "icons", component: IconsComponent },
   {
     path: "product",
     component: ProductComponent,

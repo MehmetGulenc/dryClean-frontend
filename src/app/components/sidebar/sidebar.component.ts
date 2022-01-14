@@ -18,13 +18,13 @@ export const ROUTESA: RouteInfo[] = [
   {
     path: "/product",
     title: "Ürünler",
-    icon: "ni-planet text-blue",
+    icon: "ni-tag text-blue",
     class: "",
   },
   {
     path: "/customer-add",
     title: "Müşteri Ekle",
-    icon: "ni-single-02 text-yellow",
+    icon: "ni-fat-add text-yellow",
     class: "",
   },
   {
@@ -36,13 +36,13 @@ export const ROUTESA: RouteInfo[] = [
   {
     path: "/order",
     title: "Siparişler",
-    icon: "ni-key-25 text-info",
+    icon: "ni-cart text-info",
     class: "",
   },
   {
     path: "/auth-settings",
     title: "Yetki Ayarları",
-    icon: "ni-key-25 text-info",
+    icon: "ni-ui-04 text-info",
     class: "",
   },
   //{ path: '/register', title: 'Register',  icon:'ni-circle-08 text-pink', class: '' }
@@ -57,19 +57,19 @@ export const ROUTES: RouteInfo[] = [
   {
     path: "/customer-add",
     title: "Müşteri Ekle",
-    icon: "ni-single-02 text-yellow",
+    icon: "ni-fat-add text-yellow",
     class: "",
   },
   {
     path: "/customer",
     title: "Müşteriler",
-    icon: "ni-bullet-list-67 text-red",
+    icon: "ni-single-02 text-red",
     class: "",
   },
   {
     path: "/order",
     title: "Siparişler",
-    icon: "ni-key-25 text-info",
+    icon: "ni-cart text-info",
     class: "",
   },
 ];
@@ -85,6 +85,7 @@ export class SidebarComponent implements OnInit {
   constructor(private router: Router, private authService: AuthService) {}
 
   ngOnInit() {
+    //this.menuItems = ROUTESA.filter((menuItem) => menuItem);
     this.isAdmin = this.authService.isAdmin();
     if (this.isAdmin) {
       this.menuItems = ROUTESA.filter((menuItem) => menuItem);

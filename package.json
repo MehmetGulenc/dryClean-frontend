@@ -13,12 +13,14 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^12.1.2",
+    "@angular/cdk": "^13.1.2",
     "@angular/common": "12.1.2",
     "@angular/compiler": "12.1.2",
     "@angular/core": "12.1.2",
     "@angular/forms": "12.1.2",
     "@angular/http": "7.2.16",
     "@angular/localize": "^12.1.2",
+    "@angular/material": "^13.1.2",
     "@angular/platform-browser": "12.1.2",
     "@angular/platform-browser-dynamic": "12.1.2",
     "@angular/router": "12.1.2",
@@ -32,6 +34,7 @@
     "ngx-toastr": "^14.0.0",
     "nouislider": "14.6.2",
     "rxjs": "7.2.0",
+    "sweetalert2": "^11.3.5",
     "url-polyfill": "^1.1.12",
     "zone.js": "0.11.4"
   },

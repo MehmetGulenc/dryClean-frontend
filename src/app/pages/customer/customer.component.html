@@ -134,9 +134,11 @@
                       <i class="fas fa-ellipsis-v"></i>
                     </button>
                     <div ngbDropdownMenu>
-                      <button ngbDropdownItem>Düzenle</button>
+                      <button ngbDropdownItem (click)="hazirlaniyor()">
+                        Düzenle
+                      </button>
                       <div class="dropdown-divider"></div>
-                      <button ngbDropdownItem>
+                      <button ngbDropdownItem (click)="delete(deletedCustomer)">
                         <b style="color: red">Sil</b>
                       </button>
                     </div>

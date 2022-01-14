@@ -13,7 +13,7 @@ import { ToastrModule } from "ngx-toastr";
 import { AuthInterceptor } from "./interceptors/auth.interceptor";
 import { OrderComponent } from "./pages/order/order.component";
 import { AuthSettingsComponent } from "./pages/auth-settings/auth-settings.component";
-import { CustomerComponent } from './pages/customer/customer.component';
+import { CustomerComponent } from "./pages/customer/customer.component";
 @NgModule({
   imports: [
     FormsModule,

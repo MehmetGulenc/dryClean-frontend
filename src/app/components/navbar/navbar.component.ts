@@ -23,7 +23,7 @@ export class NavbarComponent implements OnInit {
   public location: Location;
   user: UserForLocalStorage;
   isAuthenticated: boolean;
-  private isAdmin: boolean;
+  isAdmin: boolean;
   constructor(
     location: Location,
     private formBuilder: FormBuilder,
@@ -37,9 +37,9 @@ export class NavbarComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.isAdmin = this.authService.isAdmin();
     this.listTitles = ROUTES.filter((listTitle) => listTitle);
     this.isAuthenticated = this.authService.isAuthenticated();
+    this.isAdmin = this.authService.isAdmin();
     this.refresh();
     this.router.events.subscribe((s) => {
       if (s instanceof NavigationEnd) {
@@ -60,6 +60,7 @@ export class NavbarComponent implements OnInit {
     }
     return "Dashboard";
   }
+
   refresh() {
     this.isAuthenticated = this.showButton();
     if (this.isAuthenticated) {

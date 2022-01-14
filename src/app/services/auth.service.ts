@@ -33,7 +33,6 @@ export class AuthService {
   }
   isAdmin() {
     let roleName = this.localStorageService.getString("role");
-    console.log(roleName);
     if (roleName.includes("admin")) {
       return true;
     } else {
