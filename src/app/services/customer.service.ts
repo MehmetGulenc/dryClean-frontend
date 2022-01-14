@@ -11,7 +11,6 @@ import { ListResponseModel } from "../models/listResponseModel";
 export class CustomerService {
   apiUrl = "https://localhost:44365/api/";
   constructor(private httpClient: HttpClient) {}
-
   getCustomer(): Observable<ListResponseModel<Customer>> {
     let newPath = this.apiUrl + "Customers/getall";
     return this.httpClient.get<ListResponseModel<Customer>>(newPath);

@@ -20,7 +20,7 @@ export const AdminLayoutRoutes: Routes = [
   {
     path: "product",
     component: ProductComponent,
-    canActivate: [LoginGuard, AdminGuard],
+    canActivate: [LoginGuard],
   },
   { path: "order", component: OrderComponent },
   {
