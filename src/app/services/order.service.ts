@@ -8,7 +8,7 @@ import { Injectable } from "@angular/core";
   providedIn: "root",
 })
 export class OrderService {
-  apiUrl = "https://localhost:44365/api/";
+  apiUrl = "https://localhost:5001/api/";
   constructor(private httpClient: HttpClient) {}
   getOrders(): Observable<ListResponseModel<Order>> {
     let newPath = this.apiUrl + "Orders/getall";

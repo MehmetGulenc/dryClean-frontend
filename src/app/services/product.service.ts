@@ -8,7 +8,7 @@ import { ListResponseModel } from "../models/listResponseModel";
   providedIn: "root",
 })
 export class ProductService {
-  apiUrl = "https://localhost:44365/api/";
+  apiUrl = "https://localhost:5001/api/";
   constructor(private httpClient: HttpClient) {}
   getProducts(): Observable<ListResponseModel<Product>> {
     let newPath = this.apiUrl + "Product/getall";
